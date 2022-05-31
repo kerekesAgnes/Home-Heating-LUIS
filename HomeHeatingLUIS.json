@@ -1,0 +1,946 @@
+{
+  "luis_schema_version": "7.0.0",
+  "intents": [
+    {
+      "name": "None",
+      "features": []
+    },
+    {
+      "name": "TurnDown",
+      "features": []
+    },
+    {
+      "name": "TurnOff",
+      "features": []
+    },
+    {
+      "name": "TurnOn",
+      "features": []
+    },
+    {
+      "name": "TurnUp",
+      "features": []
+    }
+  ],
+  "entities": [
+    {
+      "name": "Number",
+      "children": [],
+      "roles": [],
+      "features": []
+    }
+  ],
+  "hierarchicals": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Device",
+      "subLists": [
+        {
+          "canonicalForm": "thermostat",
+          "list": [
+            "thermo",
+            "thermostats"
+          ]
+        },
+        {
+          "canonicalForm": "central heating",
+          "list": [
+            "central heating system",
+            "heating",
+            "heating system"
+          ]
+        },
+        {
+          "canonicalForm": "furnace",
+          "list": [
+            "furnaces"
+          ]
+        },
+        {
+          "canonicalForm": "boiler",
+          "list": []
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Location",
+      "subLists": [
+        {
+          "canonicalForm": "study room",
+          "list": [
+            "study rooms"
+          ]
+        },
+        {
+          "canonicalForm": "dining room",
+          "list": [
+            "dining rooms"
+          ]
+        },
+        {
+          "canonicalForm": "living room",
+          "list": [
+            "living rooms"
+          ]
+        },
+        {
+          "canonicalForm": "office",
+          "list": [
+            "offices"
+          ]
+        },
+        {
+          "canonicalForm": "kitchen",
+          "list": []
+        },
+        {
+          "canonicalForm": "bathroom",
+          "list": [
+            "wc",
+            "toilet",
+            "washroom"
+          ]
+        },
+        {
+          "canonicalForm": "bedroom",
+          "list": [
+            "sleep"
+          ]
+        },
+        {
+          "canonicalForm": "home",
+          "list": [
+            "here",
+            "inside",
+            "house"
+          ]
+        },
+        {
+          "canonicalForm": "guest room",
+          "list": [
+            "guest rooms"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Setting",
+      "subLists": [
+        {
+          "canonicalForm": "temperature",
+          "list": [
+            "temp"
+          ]
+        },
+        {
+          "canonicalForm": "cold",
+          "list": [
+            "colder"
+          ]
+        },
+        {
+          "canonicalForm": "heat",
+          "list": []
+        },
+        {
+          "canonicalForm": "hot",
+          "list": []
+        },
+        {
+          "canonicalForm": "power",
+          "list": [
+            "power level",
+            "power levels",
+            "powers"
+          ]
+        },
+        {
+          "canonicalForm": "warm",
+          "list": [
+            "warmer"
+          ]
+        },
+        {
+          "canonicalForm": "freeze",
+          "list": [
+            "freezing"
+          ]
+        },
+        {
+          "canonicalForm": "cool",
+          "list": [
+            "cooled off",
+            "cooler"
+          ]
+        }
+      ],
+      "roles": []
+    },
+    {
+      "name": "Unit",
+      "subLists": [
+        {
+          "canonicalForm": "degree",
+          "list": [
+            "degrees"
+          ]
+        },
+        {
+          "canonicalForm": "celsius",
+          "list": []
+        },
+        {
+          "canonicalForm": "fahrenheit",
+          "list": []
+        },
+        {
+          "canonicalForm": "percent",
+          "list": [
+            "%"
+          ]
+        },
+        {
+          "canonicalForm": "week",
+          "list": [
+            "weeks"
+          ]
+        },
+        {
+          "canonicalForm": "day",
+          "list": [
+            "days"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "prebuiltEntities": [],
+  "utterances": [
+    {
+      "text": "are you free tonight?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "buy me flowers",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "can you please start the heating?",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "can you please turn off the heating?",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "can you please turn on the heating?",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "can you turn on the dishwasher",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "cooled off a little",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "decrease my thermostat by 2 degrees",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 26,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "decrease my thermostat temperature by 5 degrees",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 38,
+          "endPos": 38,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "find my shoes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "go outside",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how to drive a car?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i am cold",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "i am hot",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "i am hungry",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i have to pay the bills",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i like travelling",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i love you",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i need to wake up early in the morning",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i saw an elephant yesterday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to eat pizza",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to go to los angeles",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i want to make the bedroom 5 fahrenheit warmer",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 27,
+          "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i won't be home for 2 weeks",
+      "intent": "TurnOff",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 20,
+          "endPos": 20,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i would like it to be 5 degrees cooler in the bedroom",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 22,
+          "endPos": 22,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "i would like it to be cooler in the living room",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "i'm watching a movie",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "increase temperature by 3 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 24,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "increase the temperature by 5 percent",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 28,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "increase thermostat by 2 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 23,
+          "endPos": 23,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "increase thermostat temperature by three degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 35,
+          "endPos": 39,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "increase thermostat to 20 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 23,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "it is quite hot in the living room",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "it is really hot inside, isn't it?",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "it is very hot in the kitchen",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "it should be cooler here",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "it should be cooler in the kitchen",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "it would be nice if it were warmer in this house",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "it's a little bit hot in the bedroom",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "it's cold",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "it's freezing inside!",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "it's too hot",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "it's too hot in my study room",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "john is heating his food",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "lower the thermostat by five degrees",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 24,
+          "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "lower your expectations",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "make it 3 degrees warmer",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 8,
+          "endPos": 8,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "make it warmer",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "make the guest room cooler",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "make the temperature in the dining room higher",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "my name is agnes",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please lower the temperature",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "please make it 3 degrees warmer in here",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 15,
+          "endPos": 15,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "please make it colder",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "please stop the heating system",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "please turn on the lights",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "please turn up the thermostat",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "raise temperature by 10 fahrenheit",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 21,
+          "endPos": 22,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "set the temperature cooler",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "show me a picture about you",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "start the heating system",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "switch off the boiler",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "switch on the boiler",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "the deadline is tomorrow morning",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "the guest room should be warmer",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "there is a blue painting on the wall",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "today is my birthday",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "too hot to sleep",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "turn down the central heating",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "turn down the temperature 5 degrees",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 26,
+          "endPos": 26,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn down the temperature by 10%",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 29,
+          "endPos": 30,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn down the temperature by two degrees",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 29,
+          "endPos": 31,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn down the thermostat power",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "turn down the thermostat to 20 degrees",
+      "intent": "TurnDown",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 28,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn my thermo down",
+      "intent": "TurnDown",
+      "entities": []
+    },
+    {
+      "text": "turn my thermo up",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "turn off my thermo",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "turn off the heating for three days",
+      "intent": "TurnOff",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 25,
+          "endPos": 29,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn off the heating in the bathroom",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "turn off the lights",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "turn off the thermostat",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "turn off the tv",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "turn on my thermo",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn on the boiler",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn on the central heating",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn on the furnace",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn on the heating before i get home",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn on the heating in the living room",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn on the thermostat",
+      "intent": "TurnOn",
+      "entities": []
+    },
+    {
+      "text": "turn the boiler off",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "turn the temperature up 10 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 24,
+          "endPos": 25,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn the temperature up 3 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 24,
+          "endPos": 24,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up my thermostat by 5 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 25,
+          "endPos": 25,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the central heating",
+      "intent": "TurnUp",
+      "entities": []
+    },
+    {
+      "text": "turn up the heat to 24",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 20,
+          "endPos": 21,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the temperature by 4 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 27,
+          "endPos": 27,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the temperature by 55%",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 27,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the temperature in the office by two degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 41,
+          "endPos": 43,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the temperature of my thermostat by 8 degrees",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 44,
+          "endPos": 44,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the temperature to 23 celsius",
+      "intent": "TurnUp",
+      "entities": [
+        {
+          "entity": "Number",
+          "startPos": 27,
+          "endPos": 28,
+          "children": []
+        }
+      ]
+    },
+    {
+      "text": "turn up the volume",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "we should turn off the central heating",
+      "intent": "TurnOff",
+      "entities": []
+    },
+    {
+      "text": "you keep it cold in the bathroom",
+      "intent": "TurnOn",
+      "entities": []
+    }
+  ],
+  "versionId": "0.1",
+  "name": "HomeHeatingLUIS",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "phraselists": [],
+  "regex_features": [],
+  "patterns": [],
+  "settings": []
+}
